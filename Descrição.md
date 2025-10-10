@@ -16,6 +16,7 @@ O **ToonArchive** é um site de postagem e leitura de quadrinhos. Neste CRUD, fo
   - Senha  
   - Email  
 - Exibe uma **lista de usuários cadastrados**, que é atualizada em **tempo real** abaixo do botão "Cadastrar-se".
+- Permite a **excluisão** ou **edição** das informações ja cadastradas.
 
 ### Back-end
 - Desenvolvido em **Spring Boot**.  
