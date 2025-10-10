@@ -1,0 +1,74 @@
+<div class="cadastro-container">
+  <h1 class="titulo">Crie sua Conta no ToonArchive! </h1>
+  <p class="descricao">
+    Junte-se à nossa comunidade de leitores e autores! Publique, leia e explore histórias incríveis de quadrinhos, mangás e manhwas.
+  </p>
+
+  <form class="form-cadastro">
+    <label for="usuario">👤 Nome de Usuário</label>
+    <input
+      type="text"
+      id="usuario"
+      placeholder="Ex: AdhamGamerBR"
+      [(ngModel)]="cadastro.usuario"
+      name="usuario"
+    />
+
+    <label for="email">📧 E-mail</label>
+    <input
+      type="email"
+      id="email"
+      placeholder="bleufox@gmail.com"
+      [(ngModel)]="cadastro.email"
+      name="email"
+    />
+
+    <label for="senha">🔒 Senha</label>
+    <input
+      type="password"
+      id="senha"
+      placeholder="Digite uma senha segura"
+      [(ngModel)]="cadastro.senha"
+      name="senha"
+    />
+
+    <button type="button" class="btn-salvar" (click)="salvar()">
+      {{ editando ? '💾 Atualizar' : '🚀 Cadastrar-se' }}
+    </button>
+    <button
+      *ngIf="editando"
+      type="button"
+      class="btn-cancelar"
+      (click)="cancelarEdicao()"
+    >
+      ❌ Cancelar
+    </button>
+  </form>
+
+  <h2 class="subtitulo">👥 Usuários Cadastrados</h2>
+  <table class="tabela-cadastros" *ngIf="cadastros.length > 0">
+    <thead>
+      <tr>
+        <th>Usuário</th>
+        <th>E-mail</th>
+        <th>Senha</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of cadastros">
+        <td>{{ c.usuario }}</td>
+        <td>{{ c.email }}</td>
+        <td>{{ c.senha }}</td>
+        <td>
+          <button (click)="editar(c)">✏️ Editar</button>
+          <button (click)="excluir(c.id)">🗑️ Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p *ngIf="cadastros.length === 0" class="mensagem-vazia">
+    Nenhum usuário cadastrado ainda. Seja o primeiro herói da comunidade! 💫
+  </p>
+</div>

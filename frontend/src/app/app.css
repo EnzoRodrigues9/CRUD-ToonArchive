@@ -1,0 +1,86 @@
+.cadastro-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #1a1a2e;
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.titulo {
+  color: #ff66cc;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  font-size: 0.95em;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+
+.form-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.form-cadastro label {
+  font-weight: bold;
+  color: #ffb6f3;
+}
+
+.form-cadastro input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #27293d;
+  color: white;
+}
+
+.btn-salvar {
+  margin-top: 15px;
+  background: linear-gradient(90deg, #ff66cc, #ff3385);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.btn-salvar:hover {
+  transform: scale(1.05);
+}
+
+.subtitulo {
+  margin-top: 40px;
+  color: #ff99dd;
+}
+
+.tabela-cadastros {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.tabela-cadastros th,
+.tabela-cadastros td {
+  border-bottom: 1px solid #444;
+  padding: 10px;
+}
+
+.tabela-cadastros th {
+  color: #ffb6f3;
+}
+
+.mensagem-vazia {
+  margin-top: 15px;
+  color: #aaa;
+  font-style: italic;
+}
