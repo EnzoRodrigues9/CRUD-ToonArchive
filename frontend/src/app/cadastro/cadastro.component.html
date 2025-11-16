@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="card">
+    <h2>Criar Conta no ToonArchive</h2>
+
+    <form (ngSubmit)="cadastrar()">
+
+      <div class="form-group">
+        <input 
+          type="text"
+          placeholder="Usuário"
+          [(ngModel)]="usuario.apelido"
+          name="apelido"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <input 
+          type="email"
+          placeholder="E-mail"
+          [(ngModel)]="usuario.email"
+          name="email"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <input 
+          type="password"
+          placeholder="Senha"
+          [(ngModel)]="usuario.senha"
+          name="senha"
+          required
+        >
+      </div>
+
+      <button type="submit" class="btn">Cadastrar-se</button>
+
+      <p class="link">Já tem conta?
+        <a routerLink="/login">Entrar</a>
+      </p>
+
+    </form>
+  </div>
+</div>

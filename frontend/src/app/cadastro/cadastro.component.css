@@ -1,0 +1,86 @@
+/* Fundo TOTAL preto (site inteiro) */
+:host {
+  display: block;
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Container centralizado */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Card */
+.card {
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 12px;
+  width: 380px;
+  text-align: center; /* Centraliza TÍTULOS e labels */
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Título */
+.card h2 {
+  margin-bottom: 25px;
+  color: white;
+  font-size: 22px;
+}
+
+/* Grupo dos campos */
+.form-group {
+  margin-bottom: 18px;
+  text-align: center; /* Centraliza o conteúdo dentro */
+}
+
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: 15px;
+  text-align: center; /* Texto dentro do input CENTRALIZADO */
+}
+
+/* Botão */
+.btn {
+  width: 100%;
+  background-color: #9b3efc;
+  border: none;
+  padding: 14px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #7b2cd6;
+}
+
+/* Texto abaixo */
+.link {
+  margin-top: 12px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Link */
+.link a {
+  color: #d55bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}

@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+/* Remove TODAS as margens, bordas e fundo padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo preto global */
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #000 !important;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow-x: hidden;
+}

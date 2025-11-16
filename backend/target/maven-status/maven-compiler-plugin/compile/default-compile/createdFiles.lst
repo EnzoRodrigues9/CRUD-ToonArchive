@@ -1,0 +1,8 @@
+com\example\demo\controllers\AuthRest.class
+com\example\demo\config\JwtUtil.class
+com\example\demo\CrudApplication.class
+com\example\demo\config\CorsConfig$1.class
+com\example\demo\controllers\UsuarioRest.class
+com\example\demo\models\Usuario.class
+com\example\demo\repositories\UsuarioDAO.class
+com\example\demo\config\CorsConfig.class

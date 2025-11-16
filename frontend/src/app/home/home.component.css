@@ -1,0 +1,58 @@
+.home-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #0a0a0a;
+  padding: 20px;
+}
+
+.logo {
+  color: #9d4edd;
+  font-weight: bold;
+}
+
+.sub {
+  margin-top: 10px;
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.login-btn {
+  background-color: #9d4edd;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #7b2cbf;
+}
+
+.cadastro-btn {
+  background-color: transparent;
+  border: 2px solid #9d4edd;
+  color: #9d4edd;
+}
+
+.cadastro-btn:hover {
+  background-color: #9d4edd;
+  color: white;
+}
